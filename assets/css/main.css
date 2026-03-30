@@ -2024,4 +2024,9 @@ input, select, textarea {
     width: 378px !important;
     height: 378px !important;
 }
-	}
+	.bordered-feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
