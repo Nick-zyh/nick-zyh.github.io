@@ -2024,6 +2024,15 @@ input, select, textarea {
     width: 378px !important;
     height: 378px !important;
 }
+#banner .image-wrapper {
+    max-width: 378px;
+    margin: 0 auto;
+}
 
+#banner .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 }
