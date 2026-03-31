@@ -2025,6 +2025,9 @@ input, select, textarea {
     height: 378px !important;
 }
 .bordered-feature-image {
-    padding: 0 !important;
+    width: 378px !important;
+    height: 378px !important;
+    display: block;
+    margin: 0 auto !important;  /* 居中 */
 }
 }
