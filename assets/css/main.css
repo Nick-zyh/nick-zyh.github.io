@@ -2024,11 +2024,6 @@ input, select, textarea {
     width: 378px !important;
     height: 378px !important;
 }
-.bordered-feature-image {
-    width: 378px;
-    height: 378px;
-    margin: 0 auto;       /* 居中 */
-    padding: 0;
-}
+
 
 }
