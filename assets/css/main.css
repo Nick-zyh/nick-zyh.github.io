@@ -2024,9 +2024,7 @@ input, select, textarea {
     width: 378px !important;
     height: 378px !important;
 }
-.col-6 .bordered-feature-image {
-    width: 378px !important;
-    height: 378px !important;
-    flex: none !important;
+.bordered-feature-image {
+    padding: 0 !important;
 }
 }
