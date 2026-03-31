@@ -2024,8 +2024,9 @@ input, select, textarea {
     width: 378px !important;
     height: 378px !important;
 }
-wrapper {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}	
+.bordered-feature-image {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+}
 }
