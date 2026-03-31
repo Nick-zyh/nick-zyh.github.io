@@ -2031,10 +2031,4 @@ input, select, textarea {
     padding: 0;
 }
 
-.bordered-feature-image img {
-    width: 378px !important;
-    height: 378px !important;
-    object-fit: cover;
-    display: block;
-}
 }
