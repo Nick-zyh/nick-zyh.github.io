@@ -2024,5 +2024,8 @@ input, select, textarea {
     width: 378px !important;
     height: 378px !important;
 }
-	
+wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}	
 }
