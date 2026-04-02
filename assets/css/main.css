@@ -1601,12 +1601,7 @@ input, select, textarea {
 		#features strong {
 			color: #fff;
 		}
-#features p {
-    font-size: 14px !important     
-    margin-bottom: 6px !important  
-    line-height: 1.4;  !important  
-    
-}
+
 /* Content */
 
 	#content {
