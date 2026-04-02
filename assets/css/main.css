@@ -1601,10 +1601,11 @@ input, select, textarea {
 		#features strong {
 			color: #fff;
 		}
-#features .feature-item {
-    text-align: center;
-    padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+#features section p {
+    font-size: 13px;
+    margin-bottom: 4px;
+    line-height: 1.5;
+    text-align: left;
 }
 
     
