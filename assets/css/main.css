@@ -1602,10 +1602,10 @@ input, select, textarea {
 			color: #fff;
 		}
 #features p {
-    font-size: 14px;      /* 字体变小 */
-    margin-bottom: 6px;   /* 段落间距变小 */
-    line-height: 1.4;     /* 行距稍紧 */
-    text-align: left;     /* 左对齐（防止被继承居中） */
+    font-size: 14px !important     
+    margin-bottom: 6px !important  
+    line-height: 1.4;  !important  
+    
 }
 /* Content */
 
