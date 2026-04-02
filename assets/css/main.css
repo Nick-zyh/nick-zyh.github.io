@@ -1601,11 +1601,57 @@ input, select, textarea {
 		#features strong {
 			color: #fff;
 		}
-#features section p {
+#features .feature-item {
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== 图片统一比例 ===== */
+.feature-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;   /* 统一比例 */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* 关键：防止变形 */
+    transition: transform 0.4s ease;
+}
+
+/* ===== 标题 ===== */
+#features .feature-item h2 {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+/* ===== 文字区域 ===== */
+.feature-text {
+    text-align: left;      /* 左对齐 */
+    margin: 0 auto;
+    max-width: 90%;        /* 控制宽度，更像官网 */
+}
+
+.feature-text p {
     font-size: 13px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     line-height: 1.5;
-    text-align: left;
+}
+
+/* ===== hover 动效（核心） ===== */
+.feature-item:hover {
+    transform: translateY(-5px);   /* 微微上浮 */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.feature-item:hover img {
+    transform: scale(1.05);        /* 图片放大 */
+}
+    
 }
 /* Content */
 
