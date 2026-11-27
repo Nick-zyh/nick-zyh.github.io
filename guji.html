@@ -11,18 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-
 			.classic { border: 1px solid #ddd; border-radius: 8px; padding: 1.2em 1.4em; margin: 0 0 1.2em 0; background: #fff; }
 			.classic blockquote { margin: .6em 0; padding: .8em 1em; background: #faf6ec; border-left: 4px solid #8a4b2a; line-height: 2; font-family: "KaiTi","STKaiti","楷体",serif; font-size: 1.08em; }
-			.herb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1em; }
-			.herb { border: 1px solid #ddd; border-radius: 8px; padding: 1em 1.2em; background: #fff; }
-			.herb h3 { margin-top: 0; color: #8a4b2a; }
-			.herb dl { margin: 0; }
-			.herb dt { font-weight: bold; margin-top: .4em; }
-			.herb dd { margin: 0; }
+			.subnav { display: flex; flex-wrap: wrap; gap: .5em; margin: 0 0 1.6em 0; }
+			.subnav a { padding: .45em 1.1em; border: 1px solid #8a4b2a; border-radius: 999px; color: #8a4b2a; text-decoration: none; background: #faf6ec; font-weight: bold; }
+			.cat { border-top: 3px solid #8a4b2a; padding-top: 1em; margin-top: 2em; }
+			.cat h2 { color: #8a4b2a; }
+			.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1em; }
+			.card { border: 1px solid #ddd; border-radius: 8px; padding: 1em 1.2em; background: #fff; }
+			.card h3 { margin-top: 0; color: #8a4b2a; }
 			.note { font-size: .9em; color: #666; }
 			.soon { color: #999; }
-
 		</style>
 	</head>
 	<body>
@@ -53,19 +52,81 @@
 						<div class="row">
 							<div class="col-12">
 								<section>
-
 									<header>
 										<h2>中医古籍</h2>
 										<h3>原文选读 · 白话解读 · 养生要点</h3>
 									</header>
-									<div class="classic">
-										<h3>《黄帝内经 · 素问 · 上古天真论》节选</h3>
-										<blockquote>帝曰：余闻上古之人，春秋皆度百岁，而动作不衰；今时之人，年半百而动作皆衰者，时世异耶？人将失之耶？岐伯对曰：上古之人，其知道者，法于阴阳，和于术数，食饮有节，起居有常，不妄作劳，故能形与神俱，而尽终其天年，度百岁乃去。今时之人不然也，以酒为浆，以妄为常，醉以入房，以欲竭其精，以耗散其真，不知持满，不时御神，务快其心，逆于生乐，起居无节，故半百而衰也。</blockquote>
-										<p><strong>白话解读：</strong>黄帝问：上古的人能活过百岁还行动不衰，现在的人五十岁就衰弱了，是时代不同，还是人自己做错了？岐伯答：懂得养生的人，顺应阴阳、合于养生之道，饮食有节制，作息有规律，不妄自操劳，所以身体与精神都保持得好，能活到天年；现在的人把酒当水、把放纵当常态，耗竭了精气，起居没有节制，所以半百而衰。</p>
-										<p><strong>养生要点：</strong>① 法于阴阳——顺应四季寒暑；② 食饮有节——饮食定时定量；③ 起居有常——作息规律、不熬夜；④ 形与神俱——身体和情绪一起养。这四条也是本站体质调理建议的源头。</p>
-									</div>
-									<p class="soon">陆续上线：《素问 · 四气调神大论》（四季养生）、《神农本草经》（药性总论）、《伤寒论》（辨证论治）……</p>
+									<nav class="subnav">
+										<a href="#sijing">四大经典</a>
+										<a href="#jingfang">中医经方</a>
+										<a href="#zhenjiu">针灸推拿</a>
+										<a href="#minjian">民间养生</a>
+										<a href="#mingyi">名医名著</a>
+									</nav>
 
+									<div class="cat" id="sijing">
+										<h2>四大经典</h2>
+										<p>中医四大经典是整个中医理论体系的源头：按「书」来读，先通其大义。</p>
+										<div class="grid">
+											<div class="card"><h3>《黄帝内经》</h3><p>现存最早的中医理论典籍，分《素问》《灵枢》，奠定阴阳五行、藏象经络学说。</p></div>
+											<div class="card"><h3>《难经》</h3><p>以问答体裁阐发《内经》深义，长于脉学与经络，尤其「独取寸口」影响深远。</p></div>
+											<div class="card"><h3>《神农本草经》</h3><p>最早的药学专著，载药 365 味，按上、中、下三品分类，提出君臣佐使配伍原则。</p></div>
+											<div class="card"><h3>《伤寒杂病论》</h3><p>张仲景所著，创立辨证论治体系，后世析为《伤寒论》与《金匮要略》。</p></div>
+										</div>
+										<div class="classic">
+											<h3>选读：《黄帝内经 · 素问 · 上古天真论》节选</h3>
+											<blockquote>帝曰：余闻上古之人，春秋皆度百岁，而动作不衰；今时之人，年半百而动作皆衰者，时世异耶？人将失之耶？岐伯对曰：上古之人，其知道者，法于阴阳，和于术数，食饮有节，起居有常，不妄作劳，故能形与神俱，而尽终其天年，度百岁乃去。今时之人不然也，以酒为浆，以妄为常，醉以入房，以欲竭其精，以耗散其真，不知持满，不时御神，务快其心，逆于生乐，起居无节，故半百而衰也。</blockquote>
+											<p><strong>白话解读：</strong>黄帝问：上古的人能活过百岁还行动不衰，现在的人五十岁就衰弱了，是时代不同，还是人自己做错了？岐伯答：懂得养生的人，顺应阴阳、合于养生之道，饮食有节制，作息有规律，不妄自操劳，所以身体与精神都保持得好，能活到天年；现在的人把酒当水、把放纵当常态，耗竭了精气，起居没有节制，所以半百而衰。</p>
+											<p><strong>养生要点：</strong>① 法于阴阳——顺应四季寒暑；② 食饮有节——饮食定时定量；③ 起居有常——作息规律、不熬夜；④ 形与神俱——身体和情绪一起养。这四条也是本站体质调理建议的源头。</p>
+										</div>
+									</div>
+
+									<div class="cat" id="jingfang">
+										<h2>中医经方</h2>
+										<p>经方指《伤寒论》《金匮要略》所载的经典方剂，这里按「方」来读：一张方、一个证。</p>
+										<div class="classic" id="fang-guizhi">
+											<h3>桂枝汤（《伤寒论》）</h3>
+											<p><strong>组成：</strong>桂枝三两、芍药三两、生姜三两、大枣十二枚、甘草二两（炙）。</p>
+											<p><strong>功效：</strong>解肌发表，调和营卫，被誉为「群方之冠」。</p>
+											<p><strong>主治：</strong>外感风寒表虚证——发热、汗出、恶风、头痛、鼻鸣干呕。</p>
+											<p class="note">注：剂量为汉代原方记载，现代临床须由医师辨证后按规范折算使用，切勿自行照方抓药。</p>
+										</div>
+										<p class="soon">陆续上线：麻黄汤、小柴胡汤、白虎汤、四君子汤……</p>
+									</div>
+
+									<div class="cat" id="zhenjiu">
+										<h2>针灸推拿</h2>
+										<p>针灸推拿是中医的外治法宝库，经典依据是《灵枢》与明代《针灸大成》。这里先从最常用的保健穴位讲起。</p>
+										<div class="classic" id="xue-zusanli">
+											<h3>足三里（ST36）</h3>
+											<p><strong>定位：</strong>小腿前外侧，犊鼻穴（膝眼）下三寸，胫骨前缘外一横指处。</p>
+											<p><strong>传统功效：</strong>健脾和胃，扶正培元，是著名的强壮保健穴，民间有「常灸足三里，胜吃老母鸡」之说。</p>
+											<p><strong>日常用法：</strong>可用拇指按揉，每次 3–5 分钟，以酸胀为度；艾灸须注意防火与烫伤。</p>
+											<p class="note">注：针刺必须由执业医师操作；本页内容仅供学习了解。</p>
+										</div>
+										<p class="soon">陆续上线：合谷、内关、三阴交等常用穴位与推拿手法图解……</p>
+									</div>
+
+									<div class="cat" id="minjian">
+										<h2>民间养生</h2>
+										<p>收集民间流传的日常食养与生活调摄之法。须说明：这类内容多为经验之谈，<strong>未经临床验证，仅供文化了解</strong>；身体不适请及时就医，不要用养生方法替代治疗。</p>
+										<div class="grid">
+											<div class="card"><h3>生姜红枣茶</h3><p>生姜三片、红枣五枚掰开，热水冲泡。民间用作冬日暖身的日常饮品，传统说法认为有助驱寒暖胃。阴虚火旺、容易上火者少饮。</p></div>
+											<div class="card"><h3>山药粥</h3><p>鲜山药去皮切块，与粳米同煮成粥。山药在《神农本草经》中列为上品，民间常以此粥作脾胃虚弱时的日常食养。</p></div>
+										</div>
+									</div>
+
+									<div class="cat" id="mingyi">
+										<h2>名医名著</h2>
+										<p>按「人」来读中医：一代代医家，把经验写成不朽的书。</p>
+										<div class="grid">
+											<div class="card"><h3>张仲景</h3><p>东汉医家，被尊为「医圣」，著《伤寒杂病论》，创立辨证论治。</p></div>
+											<div class="card"><h3>华佗</h3><p>东汉名医，创麻沸散与五禽戏，精于外科与养生导引。</p></div>
+											<div class="card"><h3>孙思邈</h3><p>唐代「药王」，著《千金要方》《千金翼方》，倡「大医精诚」。</p></div>
+											<div class="card"><h3>李时珍</h3><p>明代药学家，历时二十七年著《本草纲目》，载药 1892 种。</p></div>
+										</div>
+										<p class="soon">陆续上线：各位名医的小传与其代表著作的选读……</p>
+									</div>
 								</section>
 							</div>
 						</div>
