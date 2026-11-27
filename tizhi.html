@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>中医体质测试 | 用AI解读古代中医</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.tizhi-q { border: 1px solid #ddd; border-radius: 8px; padding: 1em 1.2em; margin: 0 0 1em 0; background: #fff; }
+			.tizhi-q legend { font-weight: bold; padding: 0 .4em; }
+			.tizhi-q.tizhi-missing { border-color: #c0392b; box-shadow: 0 0 0 2px rgba(192,57,43,.25); }
+			.tizhi-opts { display: flex; flex-wrap: wrap; gap: .5em; margin-top: .6em; }
+			.tizhi-opt { flex: 1 1 18%; min-width: 92px; }
+			.tizhi-opt input { position: absolute; opacity: 0; }
+			.tizhi-opt span { display: block; text-align: center; padding: .55em .2em; border: 1px solid #bbb; border-radius: 6px; cursor: pointer; background: #f7f5f0; }
+			.tizhi-opt input:checked + span { background: #8a4b2a; color: #fff; border-color: #8a4b2a; }
+			.tizhi-opt input:focus-visible + span { outline: 2px solid #8a4b2a; outline-offset: 2px; }
+			#progress-track { height: 10px; background: #e6e0d5; border-radius: 5px; overflow: hidden; margin: .5em 0 1.2em 0; }
+			#progress-bar { height: 100%; width: 0; background: #8a4b2a; transition: width .25s; }
+			#form-error { display: none; color: #c0392b; font-weight: bold; }
+			#result { display: none; margin-top: 2em; border-top: 3px solid #8a4b2a; padding-top: 1.2em; }
+			.tizhi-score-row { display: flex; align-items: center; gap: .8em; margin: .35em 0; }
+			.tizhi-score-name { flex: 0 0 4.5em; }
+			.tizhi-score-track { flex: 1; height: 12px; background: #e6e0d5; border-radius: 6px; overflow: hidden; }
+			.tizhi-score-fill { display: block; height: 100%; background: #8a4b2a; }
+			.tizhi-score-val { flex: 0 0 9em; font-size: .9em; }
+			.tizhi-note { font-size: .9em; color: #666; }
+		</style>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<h1><a href="index.html" id="logo">古中医文化传承</a></h1>
+								<nav id="nav">
+									<a href="index.html">Homepage</a>
+									<a href="tizhi.html">体质测试</a>
+									<a href="threecolumn.html">Three Column</a>
+									<a href="twocolumn1.html">Two Column #1</a>
+									<a href="twocolumn2.html">Two Column #2</a>
+									<a href="onecolumn.html">One Column</a>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Content -->
+				<section id="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<section id="tizhi-top">
+									<header>
+										<h2>中医体质测试</h2>
+										<h3>36 道题，约 3 分钟，了解您的体质倾向与调理方向</h3>
+									</header>
+									<p>请根据您<strong>最近三个月</strong>的实际感受作答：没有＝1 分，很少＝2 分，有时＝3 分，经常＝4 分，总是＝5 分。本测试依据《中医体质分类与判定》九种体质框架设计（简化版），结果仅供日常健康调理参考，<strong>不构成医疗诊断</strong>；答案只在本机浏览器中计算，不会上传或保存。</p>
+									<p id="progress-text">已完成 0 / 36 题</p>
+									<div id="progress-track"><div id="progress-bar"></div></div>
+									<form id="tizhi-form" novalidate>
+										<div id="question-list"></div>
+										<p id="form-error"></p>
+										<p><button type="submit" class="button-large">查看测试结果</button></p>
+									</form>
+									<div id="result" aria-live="polite"></div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					&copy; 古中医文化传承. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/tizhi.js"></script>
+
+	</body>
+</html>
